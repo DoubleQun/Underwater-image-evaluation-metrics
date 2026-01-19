@@ -4,7 +4,7 @@ c1 = 0.0282;
 c2 = 0.2953;
 c3 = 3.5753;
 
-uicm = UICM(img);
+[~, ~, ~, ~, uicm_value] = UICM(imgA);
 uism = UISM(img);
 uiconm = UIConM(img);
 
