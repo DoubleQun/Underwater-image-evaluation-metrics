@@ -13,7 +13,7 @@ total_niqe = 0;
 total_uciqe = 0;
 total_entropy = 0;
 total_uiqm = 0;
-total_uicm = 0;
+[~, ~, ~, ~, uicm_value] = UICM(imgA);
 total_uism = 0;
 total_uiconm = 0;
 
@@ -102,5 +102,6 @@ if valid_pairs > 0
 else
     fprintf('没有有效的图像对，无法计算平均值。\n');
 end
+
 
 
