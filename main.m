@@ -65,7 +65,7 @@ for i = 1:1:3616
     total_psnr = total_psnr + psnr_value;
     total_brisque = total_brisque + brisque_value;
     total_niqe = total_niqe + niqe_value;
-    total_uciqe = total_uciqe + uciqe_value;
+    total_uciqe = total_uciqe + UICQE_value;
     total_entropy = total_entropy + entropy_value;
     total_uiqm = total_uiqm + uiqm_value;
     total_uicm = total_uicm + uicm_value;
@@ -102,6 +102,7 @@ if valid_pairs > 0
 else
     fprintf('没有有效的图像对，无法计算平均值。\n');
 end
+
 
 
 
