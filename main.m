@@ -41,7 +41,7 @@ for i = 1:1:3616
     ssim_value = ssim(imgA, imgB);
     brisque_value = brisque(imgA);
     niqe_value = niqe(imgA);
-    uciqe_value = calculate_uciqe(imgA);
+    uciqe_value = UICQE(imgA);
     entropy_value = entropy(imgA);
     uiqm_value = UIQM(imgA);
     [~, ~, ~, ~, uicm_value] = UICM(imgA);
@@ -102,6 +102,7 @@ if valid_pairs > 0
 else
     fprintf('没有有效的图像对，无法计算平均值。\n');
 end
+
 
 
 
